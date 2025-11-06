@@ -1,0 +1,12 @@
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/bin/Debug/net8.0/CasinoAPI.Core.deps.json
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/bin/Debug/net8.0/CasinoAPI.Core.dll
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/bin/Debug/net8.0/CasinoAPI.Core.pdb
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/obj/Debug/net8.0/CasinoAPI.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/obj/Debug/net8.0/CasinoAPI.Core.AssemblyInfoInputs.cache
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/obj/Debug/net8.0/CasinoAPI.Core.AssemblyInfo.cs
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/obj/Debug/net8.0/CasinoAPI.Core.csproj.CoreCompileInputs.cache
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/obj/Debug/net8.0/CasinoAPI.Core.dll
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/obj/Debug/net8.0/refint/CasinoAPI.Core.dll
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/obj/Debug/net8.0/CasinoAPI.Core.pdb
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/obj/Debug/net8.0/ref/CasinoAPI.Core.dll
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/obj/Debug/net8.0/CasinoAPI.Core.csproj.AssemblyReference.cache

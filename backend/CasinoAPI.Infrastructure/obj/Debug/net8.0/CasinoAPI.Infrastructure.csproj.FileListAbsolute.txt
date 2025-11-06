@@ -1,0 +1,17 @@
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/bin/Debug/net8.0/CasinoAPI.Infrastructure.deps.json
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/bin/Debug/net8.0/CasinoAPI.Infrastructure.runtimeconfig.json
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/bin/Debug/net8.0/CasinoAPI.Infrastructure.dll
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/bin/Debug/net8.0/CasinoAPI.Infrastructure.pdb
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/bin/Debug/net8.0/CasinoAPI.Core.dll
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/bin/Debug/net8.0/CasinoAPI.Core.pdb
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/obj/Debug/net8.0/CasinoAPI.Infrastructure.csproj.AssemblyReference.cache
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/obj/Debug/net8.0/CasinoAPI.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/obj/Debug/net8.0/CasinoAPI.Infrastructure.AssemblyInfoInputs.cache
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/obj/Debug/net8.0/CasinoAPI.Infrastructure.AssemblyInfo.cs
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/obj/Debug/net8.0/CasinoAPI.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/obj/Debug/net8.0/CasinoAP.3A0CCF9B.Up2Date
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/obj/Debug/net8.0/CasinoAPI.Infrastructure.dll
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/obj/Debug/net8.0/refint/CasinoAPI.Infrastructure.dll
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/obj/Debug/net8.0/CasinoAPI.Infrastructure.pdb
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/obj/Debug/net8.0/CasinoAPI.Infrastructure.genruntimeconfig.cache
+/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/obj/Debug/net8.0/ref/CasinoAPI.Infrastructure.dll
