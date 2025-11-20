@@ -2,6 +2,8 @@ import { Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { AccountComponent } from './pages/account/account.component';
+import { TransactionsComponent } from './pages/transactions/transactions.component';
 import { SlotComponent } from './components/games/slot/slot.component';
 import { BlackjackComponent } from './components/games/blackjack/blackjack.component';
 import { RouletteComponent } from './components/games/roulette/roulette.component';
@@ -13,6 +15,8 @@ export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [authGuard] },
+  { path: 'account', component: AccountComponent, canActivate: [authGuard] },
+  { path: 'transactions', component: TransactionsComponent, canActivate: [authGuard] },
   { path: 'games/slot', component: SlotComponent, canActivate: [authGuard] },
   { path: 'games/blackjack', component: BlackjackComponent, canActivate: [authGuard] },
   { path: 'games/roulette', component: RouletteComponent, canActivate: [authGuard] },

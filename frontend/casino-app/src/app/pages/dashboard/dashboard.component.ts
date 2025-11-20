@@ -13,6 +13,8 @@ import { User } from '../../models/auth.model';
       <nav class="navbar">
         <div class="nav-brand">🎰 Casino</div>
         <div class="nav-items">
+          <button routerLink="/account" class="nav-btn">👤 Account</button>
+          <button routerLink="/transactions" class="nav-btn">📊 History</button>
           <span class="balance">Balance: \${{ (user?.balance || 0).toFixed(2) }}</span>
           <span class="username">{{ user?.username }}</span>
           <button (click)="logout()" class="logout-btn">Logout</button>
@@ -103,6 +105,22 @@ import { User } from '../../models/auth.model';
 
     .logout-btn:hover {
       background: #c82333;
+    }
+
+    .nav-btn {
+      padding: 0.5rem 1rem;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .nav-btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
     }
 
     .container {
