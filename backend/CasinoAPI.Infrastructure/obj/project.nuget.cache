@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4caSVN24aLY=",
+  "dgSpecHash": "gMBiTF5Gg6U=",
   "success": true,
-  "projectFilePath": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/CasinoAPI.Infrastructure.csproj",
+  "projectFilePath": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Infrastructure/CasinoAPI.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/viktorshershnov/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/viktorshershnov/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",

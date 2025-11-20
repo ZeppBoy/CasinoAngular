@@ -59,6 +59,7 @@ builder.Services.AddScoped<ITransactionService, TransactionService>();
 builder.Services.AddScoped<ISlotMachineService, SlotMachineService>();
 builder.Services.AddScoped<IBlackjackService, BlackjackService>();
 builder.Services.AddScoped<IRouletteService, RouletteService>();
+builder.Services.AddScoped<IPokerService, PokerService>();
 
 // Configure JWT Authentication
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UnQnI1C1UhE=",
+  "dgSpecHash": "59u9GMjBjdM=",
   "success": true,
-  "projectFilePath": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Tests/CasinoAPI.Tests.csproj",
+  "projectFilePath": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Tests/CasinoAPI.Tests.csproj",
   "expectedPackageFiles": [
     "/Users/viktorshershnov/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/viktorshershnov/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",

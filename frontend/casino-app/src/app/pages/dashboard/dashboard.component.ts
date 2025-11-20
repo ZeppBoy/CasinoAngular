@@ -43,6 +43,13 @@ import { User } from '../../models/auth.model';
             <p>Place your bets and spin!</p>
             <button>Play Now</button>
           </div>
+
+          <div class="game-card" routerLink="/games/poker">
+            <div class="game-icon">🂡</div>
+            <h3>Video Poker</h3>
+            <p>Jacks or Better - 5 Card Draw!</p>
+            <button>Play Now</button>
+          </div>
         </div>
       </div>
     </div>

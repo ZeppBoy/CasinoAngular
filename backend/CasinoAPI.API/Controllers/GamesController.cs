@@ -14,17 +14,20 @@ public class GamesController : ControllerBase
     private readonly ISlotMachineService _slotMachineService;
     private readonly IBlackjackService _blackjackService;
     private readonly IRouletteService _rouletteService;
+    private readonly IPokerService _pokerService;
     private readonly ILogger<GamesController> _logger;
 
     public GamesController(
         ISlotMachineService slotMachineService, 
         IBlackjackService blackjackService,
         IRouletteService rouletteService,
+        IPokerService pokerService,
         ILogger<GamesController> logger)
     {
         _slotMachineService = slotMachineService;
         _blackjackService = blackjackService;
         _rouletteService = rouletteService;
+        _pokerService = pokerService;
         _logger = logger;
     }
 
@@ -233,6 +236,93 @@ public class GamesController : ControllerBase
         {
             _logger.LogError(ex, "Error during roulette spin");
             return StatusCode(500, new { message = "An error occurred during roulette spin" });
+        }
+    }
+
+    [HttpPost("poker/start")]
+    [ProducesResponseType(typeof(PokerStateDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<PokerStateDto>> StartPoker([FromBody] PokerStartDto startDto)
+    {
+        try
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var userId = GetCurrentUserId();
+            var result = await _pokerService.StartGameAsync(userId, startDto.BetAmount);
+            
+            _logger.LogInformation(
+                "User {UserId} started poker - Bet: {BetAmount}, GameId: {GameId}", 
+                userId, startDto.BetAmount, result.GameId);
+            
+            return Ok(result);
+        }
+        catch (InvalidOperationException ex)
+        {
+            _logger.LogWarning("Poker start failed: {Message}", ex.Message);
+            return BadRequest(new { message = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error starting poker");
+            return StatusCode(500, new { message = "An error occurred starting poker" });
+        }
+    }
+
+    [HttpPost("poker/{gameId}/draw")]
+    [ProducesResponseType(typeof(PokerStateDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<PokerStateDto>> DrawPoker(string gameId, [FromBody] PokerDrawDto drawDto)
+    {
+        try
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var result = await _pokerService.DrawAsync(gameId, drawDto.CardsToHold);
+            
+            _logger.LogInformation(
+                "Poker game {GameId} draw completed - Hand: {HandRank}, Win: {WinAmount}", 
+                gameId, result.HandRank, result.WinAmount);
+            
+            return Ok(result);
+        }
+        catch (InvalidOperationException ex)
+        {
+            _logger.LogWarning("Poker draw failed: {Message}", ex.Message);
+            return BadRequest(new { message = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error during poker draw");
+            return StatusCode(500, new { message = "An error occurred during draw" });
+        }
+    }
+
+    [HttpGet("poker/{gameId}")]
+    [ProducesResponseType(typeof(PokerStateDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<PokerStateDto>> GetPokerGame(string gameId)
+    {
+        try
+        {
+            var result = await _pokerService.GetGameStateAsync(gameId);
+            return Ok(result);
+        }
+        catch (InvalidOperationException ex)
+        {
+            _logger.LogWarning("Get poker game failed: {Message}", ex.Message);
+            return BadRequest(new { message = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error getting poker game");
+            return StatusCode(500, new { message = "An error occurred getting game state" });
         }
     }
 }

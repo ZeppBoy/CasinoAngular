@@ -493,11 +493,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/CasinoAPI.Core.csproj",
+      "projectUniqueName": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Core/CasinoAPI.Core.csproj",
       "projectName": "CasinoAPI.Core",
-      "projectPath": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/CasinoAPI.Core.csproj",
+      "projectPath": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Core/CasinoAPI.Core.csproj",
       "packagesPath": "/Users/viktorshershnov/.nuget/packages/",
-      "outputPath": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/obj/",
+      "outputPath": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/viktorshershnov/.nuget/NuGet/NuGet.Config"

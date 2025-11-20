@@ -71,3 +71,25 @@ export interface RouletteBetResult {
   winAmount: number;
   payout: number;
 }
+
+// Poker
+export interface PokerStartRequest {
+  betAmount: number;
+}
+
+export interface PokerDrawRequest {
+  cardsToHold: number[];
+}
+
+export interface PokerState {
+  gameId: string;
+  hand: Card[];
+  handRank: string;
+  betAmount: number;
+  winAmount: number;
+  payout: number;
+  balanceAfter: number;
+  status: string;
+  canDraw: boolean;
+  cardsToHold: number[];
+}

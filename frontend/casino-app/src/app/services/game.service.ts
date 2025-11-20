@@ -7,7 +7,10 @@ import {
   BlackjackStartRequest, 
   BlackjackState,
   RouletteSpinRequest,
-  RouletteResult
+  RouletteResult,
+  PokerStartRequest,
+  PokerState,
+  PokerDrawRequest
 } from '../models/game.model';
 import { environment } from '../../environments/environment';
 import { AuthService } from './auth.service';
@@ -54,6 +57,21 @@ export class GameService {
   spinRoulette(request: RouletteSpinRequest): Observable<RouletteResult> {
     return this.http.post<RouletteResult>(`${this.API_URL}/games/roulette/spin`, request)
       .pipe(tap(result => this.updateBalance(result.balanceAfter)));
+  }
+
+  // Poker
+  startPoker(request: PokerStartRequest): Observable<PokerState> {
+    return this.http.post<PokerState>(`${this.API_URL}/games/poker/start`, request)
+      .pipe(tap(state => this.updateBalance(state.balanceAfter)));
+  }
+
+  drawPoker(gameId: string, request: PokerDrawRequest): Observable<PokerState> {
+    return this.http.post<PokerState>(`${this.API_URL}/games/poker/${gameId}/draw`, request)
+      .pipe(tap(state => this.updateBalance(state.balanceAfter)));
+  }
+
+  getPokerGame(gameId: string): Observable<PokerState> {
+    return this.http.get<PokerState>(`${this.API_URL}/games/poker/${gameId}`);
   }
 
   private updateBalance(newBalance: number): void {

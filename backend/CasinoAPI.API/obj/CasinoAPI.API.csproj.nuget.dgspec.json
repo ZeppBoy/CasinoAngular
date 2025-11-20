@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.API/CasinoAPI.API.csproj": {}
+    "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.API/CasinoAPI.API.csproj": {}
   },
   "projects": {
-    "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.API/CasinoAPI.API.csproj": {
+    "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.API/CasinoAPI.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.API/CasinoAPI.API.csproj",
+        "projectUniqueName": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.API/CasinoAPI.API.csproj",
         "projectName": "CasinoAPI.API",
-        "projectPath": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.API/CasinoAPI.API.csproj",
+        "projectPath": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.API/CasinoAPI.API.csproj",
         "packagesPath": "/Users/viktorshershnov/.nuget/packages/",
-        "outputPath": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.API/obj/",
+        "outputPath": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/viktorshershnov/.nuget/NuGet/NuGet.Config"
@@ -27,11 +27,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/CasinoAPI.Core.csproj": {
-                "projectPath": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/CasinoAPI.Core.csproj"
+              "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Core/CasinoAPI.Core.csproj": {
+                "projectPath": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Core/CasinoAPI.Core.csproj"
               },
-              "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/CasinoAPI.Infrastructure.csproj": {
-                "projectPath": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/CasinoAPI.Infrastructure.csproj"
+              "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Infrastructure/CasinoAPI.Infrastructure.csproj": {
+                "projectPath": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Infrastructure/CasinoAPI.Infrastructure.csproj"
               }
             }
           }
@@ -98,14 +98,14 @@
         }
       }
     },
-    "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/CasinoAPI.Core.csproj": {
+    "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Core/CasinoAPI.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/CasinoAPI.Core.csproj",
+        "projectUniqueName": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Core/CasinoAPI.Core.csproj",
         "projectName": "CasinoAPI.Core",
-        "projectPath": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/CasinoAPI.Core.csproj",
+        "projectPath": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Core/CasinoAPI.Core.csproj",
         "packagesPath": "/Users/viktorshershnov/.nuget/packages/",
-        "outputPath": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/obj/",
+        "outputPath": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/viktorshershnov/.nuget/NuGet/NuGet.Config"
@@ -172,14 +172,14 @@
         }
       }
     },
-    "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/CasinoAPI.Infrastructure.csproj": {
+    "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Infrastructure/CasinoAPI.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/CasinoAPI.Infrastructure.csproj",
+        "projectUniqueName": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Infrastructure/CasinoAPI.Infrastructure.csproj",
         "projectName": "CasinoAPI.Infrastructure",
-        "projectPath": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/CasinoAPI.Infrastructure.csproj",
+        "projectPath": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Infrastructure/CasinoAPI.Infrastructure.csproj",
         "packagesPath": "/Users/viktorshershnov/.nuget/packages/",
-        "outputPath": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Infrastructure/obj/",
+        "outputPath": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/viktorshershnov/.nuget/NuGet/NuGet.Config"
@@ -195,8 +195,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/CasinoAPI.Core.csproj": {
-                "projectPath": "/Users/viktorshershnov/AI/Projects/CasinoAngular/backend/CasinoAPI.Core/CasinoAPI.Core.csproj"
+              "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Core/CasinoAPI.Core.csproj": {
+                "projectPath": "/Users/viktorshershnov/AI/Projects/Copilot/backend/CasinoAPI.Core/CasinoAPI.Core.csproj"
               }
             }
           }

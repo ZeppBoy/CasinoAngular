@@ -5,6 +5,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { SlotComponent } from './components/games/slot/slot.component';
 import { BlackjackComponent } from './components/games/blackjack/blackjack.component';
 import { RouletteComponent } from './components/games/roulette/roulette.component';
+import { PokerComponent } from './components/games/poker/poker.component';
 import { authGuard } from './guards/auth.guard';
 
 export const routes: Routes = [
@@ -15,5 +16,6 @@ export const routes: Routes = [
   { path: 'games/slot', component: SlotComponent, canActivate: [authGuard] },
   { path: 'games/blackjack', component: BlackjackComponent, canActivate: [authGuard] },
   { path: 'games/roulette', component: RouletteComponent, canActivate: [authGuard] },
+  { path: 'games/poker', component: PokerComponent, canActivate: [authGuard] },
   { path: '**', redirectTo: '/login' }
 ];
