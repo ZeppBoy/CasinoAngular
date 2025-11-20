@@ -5,12 +5,15 @@ import { Router, RouterModule } from '@angular/router';
 import { UserService } from '../../services/user.service';
 import { AuthService } from '../../services/auth.service';
 import { User } from '../../models/auth.model';
+import { ToastService } from '../../shared/services/toast.service';
+import { LoadingSpinnerComponent } from '../../shared/components/loading-spinner.component';
 
 @Component({
   selector: 'app-account',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterModule],
+  imports: [CommonModule, FormsModule, RouterModule, LoadingSpinnerComponent],
   template: `
+    <app-loading-spinner [show]="isLoading" message="Processing..."></app-loading-spinner>
     <div class="account-page">
       <nav class="navbar">
         <div class="nav-brand" routerLink="/dashboard">🎰 Casino</div>
@@ -80,13 +83,7 @@ import { User } from '../../models/auth.model';
               </div>
             </div>
 
-            <div class="success-message" *ngIf="successMessage">
-              ✓ {{ successMessage }}
-            </div>
 
-            <div class="error-message" *ngIf="errorMessage">
-              ✗ {{ errorMessage }}
-            </div>
           </div>
 
           <div class="card quick-links-card">
@@ -150,7 +147,8 @@ export class AccountComponent implements OnInit {
   constructor(
     private userService: UserService,
     private authService: AuthService,
-    private router: Router
+    private router: Router,
+    private toastService: ToastService
   ) {}
 
   ngOnInit(): void {
@@ -162,50 +160,42 @@ export class AccountComponent implements OnInit {
 
   deposit(): void {
     if (this.depositAmount < 0.01 || this.depositAmount > 10000) {
-      this.errorMessage = 'Deposit amount must be between $0.01 and $10,000';
+      this.toastService.error('Deposit amount must be between $0.01 and $10,000', 'Invalid Amount');
       return;
     }
 
     this.isLoading = true;
-    this.successMessage = '';
-    this.errorMessage = '';
 
     this.userService.deposit(this.depositAmount).subscribe({
       next: (response) => {
-        this.successMessage = `Successfully deposited $${this.depositAmount.toFixed(2)}`;
+        this.toastService.success(`Successfully deposited $${this.depositAmount.toFixed(2)}`, 'Deposit Complete');
         this.depositAmount = 10;
         this.isLoading = false;
-        setTimeout(() => this.successMessage = '', 3000);
       },
       error: (error) => {
-        this.errorMessage = error.error?.message || 'Deposit failed';
+        this.toastService.error(error.error?.message || 'Deposit failed', 'Deposit Error');
         this.isLoading = false;
-        setTimeout(() => this.errorMessage = '', 5000);
       }
     });
   }
 
   withdraw(): void {
     if (this.withdrawAmount < 0.01 || this.withdrawAmount > (this.user?.balance || 0)) {
-      this.errorMessage = 'Invalid withdrawal amount';
+      this.toastService.error('Invalid withdrawal amount', 'Withdrawal Error');
       return;
     }
 
     this.isLoading = true;
-    this.successMessage = '';
-    this.errorMessage = '';
 
     this.userService.withdraw(this.withdrawAmount).subscribe({
       next: (response) => {
-        this.successMessage = `Successfully withdrew $${this.withdrawAmount.toFixed(2)}`;
+        this.toastService.success(`Successfully withdrew $${this.withdrawAmount.toFixed(2)}`, 'Withdrawal Complete');
         this.withdrawAmount = 10;
         this.isLoading = false;
-        setTimeout(() => this.successMessage = '', 3000);
       },
       error: (error) => {
-        this.errorMessage = error.error?.message || 'Withdrawal failed';
+        this.toastService.error(error.error?.message || 'Withdrawal failed', 'Withdrawal Error');
         this.isLoading = false;
-        setTimeout(() => this.errorMessage = '', 5000);
       }
     });
   }
